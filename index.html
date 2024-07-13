@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Counseling Management System - Section 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" height="150px" width="150px" alt="Student Counseling Logo">
+            </div>
+            <h1>Student Counseling Management System</h1>
+        </header>
+        
+        <section id="studentSection" class="form-section">
+            <h2>Section 1: Student Information</h2>
+            <form id="studentForm">
+                <!-- Student Form Inputs -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <label for="tenthPercentage">10th Percentage:</label>
+                <input type="number" id="tenthPercentage" step="0.01" required>
+                <label for="twelfthPercentage">12th Percentage:</label>
+                <input type="number" id="twelfthPercentage" step="0.01" required>
+                <label for="rankEntranceExam">Rank in Entrance Exam:</label>
+                <input type="number" id="rankEntranceExam" required>
+                <button type="submit">Next</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

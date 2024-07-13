@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Counseling Management System - Section 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+            <div class="logo">
+                <img height="150px" width="150px" src="logo.jpg" alt="Student Counseling Logo">
+            </div>
+            <h1>Student Counseling Management System</h1>
+        </header>
+    <div class="container">
+        <h1>Section 6: Institutes</h1>
+        <form id="institutesForm">
+            <!-- Institutes Form Inputs -->
+            <label for="instituteCode">Institute Code:</label>
+            <input type="text" id="instituteCode" required>
+            <label for="instituteName">Institute Name:</label>
+            <input type="text" id="instituteName" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
